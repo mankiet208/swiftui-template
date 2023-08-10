@@ -17,7 +17,7 @@ struct LoginView: View {
                 HeaderView(title: "TO DO",
                            subtitle: "Never miss a thing",
                            angle: 15,
-                           backgroundColor: .orange)
+                           backgroundColor: .blue)
                 
                 if !viewModel.errorMessage.isEmpty {
                     Text(viewModel.errorMessage)
@@ -42,7 +42,6 @@ struct LoginView: View {
                 // Register
                 VStack {
                     Text("New around here?")
-//                    NavigationLink("Create an account", destination: RegisterView())
                     NavigationLink(value: Route.register) {
                         Text("Create an account")
                     }
